@@ -1,0 +1,246 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Soft gradient background for a modern feel */
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+    color: #2d3748;
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    /* Deeper, softer shadow for a floating effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+}
+
+h1 {
+    text-align: center;
+    color: #1a202c;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 15px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+h2 {
+    color: #4a5568;
+    margin-top: 40px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Adds a nice vertical blue accent line next to your headers */
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 24px;
+    background-color: #3182ce;
+    border-radius: 4px;
+}
+
+.table-container {
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    overflow-x: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 0.95rem;
+    vertical-align: middle; 
+}
+
+th {
+    background-color: #f7fafc;
+    color: #4a5568;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Subtle row hover effect */
+tr:hover td {
+    background-color: #ebf8ff;
+    transition: background-color 0.2s ease;
+}
+
+/* Center align the last column (GMP) in all tables */
+th:last-child, td:last-child {
+    text-align: center;
+}
+
+/* Updated Dynamic GMP Colors with uniform widths */
+.gmp-positive {
+    color: #047857;
+    background-color: #d1fae5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 65px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gmp-negative {
+    color: #b91c1c;
+    background-color: #fee2e2;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 65px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gmp-neutral {
+    color: #718096;
+    background-color: #edf2f7;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 65px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ========================================= */
+/* MOBILE RESPONSIVE DESIGN (CARD LAYOUT)    */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .table-container {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    /* Force table to behave like standard block elements */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide standard table headers for mobile */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /* Style rows as individual cards */
+    tr {
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+        overflow: hidden; 
+    }
+
+    /* Remove row hover effect on mobile */
+    tr:hover td {
+        background-color: transparent;
+    }
+
+    /* Transform cells into flex containers */
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #edf2f7;
+        padding: 12px 15px;
+        text-align: right;
+        font-size: 0.9rem;
+    }
+
+    /* Reset right alignment for the GMP badge */
+    th:last-child, td:last-child {
+        text-align: right;
+    }
+
+    /* Inject column labels on the left side of the row */
+    td::before {
+        font-weight: 600;
+        color: #4a5568;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+        text-align: left;
+        margin-right: 15px;
+    }
+
+    /* Labels for the Groww Table */
+    #groww-table td:nth-child(1)::before { content: "Company Name"; }
+    #groww-table td:nth-child(2)::before { content: "Starting Date"; }
+    #groww-table td:nth-child(3)::before { content: "Ending Date"; }
+    #groww-table td:nth-child(4)::before { content: "GMP (%)"; }
+
+    /* Labels for the Other Mainboard IPO Table */
+    #other-table td:nth-child(1)::before { content: "Company Name"; }
+    #other-table td:nth-child(2)::before { content: "GMP (%)"; }
+}
+/* Make the Company Name (first column) stand out */
+td:first-child {
+    font-weight: 700;       /* Makes the text bold */
+    color: #444d60;         /* Uses a darker, bolder color */
+    font-size: 1.05rem;     /* Makes the text slightly larger */
+}
+/* Dynamic Last Updated Colors */
+.updated-today {
+    color: #27ae60; /* Green */
+    font-weight: bold;
+}
+
+.updated-yesterday {
+    color: #2980b9; /* Blue */
+    font-weight: bold;
+}
+
+.updated-older {
+    color: #c0392b; /* Red */
+    font-weight: bold;
+}

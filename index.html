@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IPO Tracker Dashboard</h1>
+        
+        <!-- Updated: Removed the static grey color so JS can control it -->
+        <p id="last-updated" style="text-align: center; font-size: 0.9em; margin-top: -15px; margin-bottom: 25px;"></p>
+        
+        <h2>Groww Listed IPO(Mainboard)</h2>
+        <div class="table-container">
+            <table id="groww-table">
+                <thead>
+                    <tr>
+                        <th>Company Name</th>
+                        <th>Starting Date</th>
+                        <th>Ending Date</th>
+                        <th>GMP (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Other Mainboard IPOs</h2>
+        <div class="table-container">
+            <table id="other-table">
+                <thead>
+                    <tr>
+                        <th>Company Name</th>
+                        <th>GMP (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Ensure your file name matches here! -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
