@@ -101,5 +101,5 @@ const ipoData = {
             "GMP_Percentage": "-7.07%"
         }
     ],
-    "last_updated": "2026-09-07 12:45:17"
+    "last_updated": "2026-09-07 12:45:47"
 };
