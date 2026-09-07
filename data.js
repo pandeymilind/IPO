@@ -4,104 +4,57 @@ const ipoData = {
             "Name": "Pranav Constructions",
             "Starting": "07 Sep 2026",
             "Ending": "09 Sep 2026",
-            "GMP_Percentage": "35.48%"
+            "GMP_Percentage": "Not found"
         },
         {
             "Name": "Kanohar Electricals",
             "Starting": "08 Sep 2026",
             "Ending": "10 Sep 2026",
-            "GMP_Percentage": "32.44%"
+            "GMP_Percentage": "Not found"
         },
         {
             "Name": "Prasol Chemicals",
             "Starting": "08 Sep 2026",
             "Ending": "10 Sep 2026",
-            "GMP_Percentage": "17.01%"
+            "GMP_Percentage": "Not found"
         },
         {
             "Name": "Glass Wall Systems",
             "Starting": "08 Sep 2026",
             "Ending": "10 Sep 2026",
-            "GMP_Percentage": "17.58%"
-        }
-    ],
-    "other_mainboard_ipos": [
-        {
-            "Name": "NSE",
-            "GMP_Percentage": "-%"
-        },
-        {
-            "Name": "Manika Plastech",
-            "GMP_Percentage": "-%"
-        },
-        {
-            "Name": "Veegaland Developers",
-            "GMP_Percentage": "21.43%"
-        },
-        {
-            "Name": "Steamhouse",
-            "GMP_Percentage": "-%"
-        },
-        {
-            "Name": "Manipal Payment and Identity Solutions",
-            "GMP_Percentage": "8.85%"
+            "GMP_Percentage": "Not found"
         },
         {
             "Name": "Asset Reconstruction",
-            "GMP_Percentage": "0.00%"
-        },
-        {
-            "Name": "Rentomojo",
-            "GMP_Percentage": "36.88%"
-        },
-        {
-            "Name": "LCC Projects",
-            "GMP_Percentage": "17.12%"
+            "Starting": "09 Sep 2026",
+            "Ending": "11 Sep 2026",
+            "GMP_Percentage": "Not found"
         },
         {
             "Name": "Karamtara Engineering",
-            "GMP_Percentage": "21.65%"
+            "Starting": "09 Sep 2026",
+            "Ending": "11 Sep 2026",
+            "GMP_Percentage": "Not found"
         },
         {
-            "Name": "Deepa Jewellers",
-            "GMP_Percentage": "12.15%"
+            "Name": "LCC Projects",
+            "Starting": "09 Sep 2026",
+            "Ending": "11 Sep 2026",
+            "GMP_Percentage": "Not found"
         },
         {
-            "Name": "Rays of Belief",
-            "GMP_Percentage": "8.37%"
+            "Name": "Manipal Payment and Identity Solutions",
+            "Starting": "09 Sep 2026",
+            "Ending": "11 Sep 2026",
+            "GMP_Percentage": "Not found"
         },
         {
-            "Name": "Purple Style Labs",
-            "GMP_Percentage": "-1.74%"
-        },
-        {
-            "Name": "Priority Jewels",
-            "GMP_Percentage": "14.00%"
-        },
-        {
-            "Name": "ESDS Software Solution",
-            "GMP_Percentage": "72.49%"
-        },
-        {
-            "Name": "Lumino Industries",
-            "GMP_Percentage": "46.34%"
-        },
-        {
-            "Name": "Annu Projects",
-            "GMP_Percentage": "-7.07%"
-        },
-        {
-            "Name": "Skyways Air",
-            "GMP_Percentage": "23.91%"
-        },
-        {
-            "Name": "Symbiotec Pharmalab",
-            "GMP_Percentage": "18.72%"
-        },
-        {
-            "Name": "Hy-Tech Engineers",
-            "GMP_Percentage": "73.58%"
+            "Name": "Rentomojo",
+            "Starting": "09 Sep 2026",
+            "Ending": "11 Sep 2026",
+            "GMP_Percentage": "Not found"
         }
     ],
-    "last_updated": "2026-09-06 21:34:01"
+    "other_mainboard_ipos": [],
+    "last_updated": "2026-09-07 12:44:36"
 };
