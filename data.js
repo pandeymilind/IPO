@@ -1,58 +1,70 @@
 const ipoData = {
     "groww_open_ipos": [
         {
-            "Name": "Pranav Constructions",
-            "Starting": "07 Sep 2026",
-            "Ending": "09 Sep 2026",
-            "GMP_Percentage": "35.48%"
-        },
-        {
             "Name": "Kanohar Electricals",
             "Starting": "08 Sep 2026",
             "Ending": "10 Sep 2026",
-            "GMP_Percentage": "30.38%"
+            "GMP_Percentage": "35.28%"
         },
         {
             "Name": "Prasol Chemicals",
             "Starting": "08 Sep 2026",
             "Ending": "10 Sep 2026",
-            "GMP_Percentage": "13.31%"
+            "GMP_Percentage": "0.00%"
         },
         {
             "Name": "Glass Wall Systems",
             "Starting": "08 Sep 2026",
             "Ending": "10 Sep 2026",
-            "GMP_Percentage": "20.88%"
+            "GMP_Percentage": "34.07%"
         },
         {
             "Name": "Asset Reconstruction",
             "Starting": "09 Sep 2026",
             "Ending": "11 Sep 2026",
-            "GMP_Percentage": "0.00%"
+            "GMP_Percentage": "17.27%"
+        },
+        {
+            "Name": "Steamhouse India",
+            "Starting": "09 Sep 2026",
+            "Ending": "11 Sep 2026",
+            "GMP_Percentage": "24.69%"
         },
         {
             "Name": "Karamtara Engineering",
             "Starting": "09 Sep 2026",
             "Ending": "11 Sep 2026",
-            "GMP_Percentage": "21.65%"
+            "GMP_Percentage": "28.35%"
         },
         {
             "Name": "LCC Projects",
             "Starting": "09 Sep 2026",
             "Ending": "11 Sep 2026",
-            "GMP_Percentage": "17.12%"
+            "GMP_Percentage": "27.40%"
         },
         {
             "Name": "Manipal Payment and Identity Solutions",
             "Starting": "09 Sep 2026",
             "Ending": "11 Sep 2026",
-            "GMP_Percentage": "10.03%"
+            "GMP_Percentage": "3.83%"
         },
         {
             "Name": "Rentomojo",
             "Starting": "09 Sep 2026",
             "Ending": "11 Sep 2026",
-            "GMP_Percentage": "34.90%"
+            "GMP_Percentage": "35.40%"
+        },
+        {
+            "Name": "Veegaland Developers",
+            "Starting": "10 Sep 2026",
+            "Ending": "15 Sep 2026",
+            "GMP_Percentage": "7.14%"
+        },
+        {
+            "Name": "Manika Plastech",
+            "Starting": "11 Sep 2026",
+            "Ending": "16 Sep 2026",
+            "GMP_Percentage": "39.53%"
         }
     ],
     "other_mainboard_ipos": [
@@ -61,45 +73,21 @@ const ipoData = {
             "GMP_Percentage": "-%"
         },
         {
-            "Name": "Manika Plastech",
-            "GMP_Percentage": "16.28%"
+            "Name": "Sonaselection India",
+            "GMP_Percentage": "-%"
         },
         {
-            "Name": "Veegaland Developers",
-            "GMP_Percentage": "21.43%"
+            "Name": "Jindal Supreme",
+            "GMP_Percentage": "11.83%"
         },
         {
-            "Name": "Steamhouse",
-            "GMP_Percentage": "0.00%"
+            "Name": "SS Retail",
+            "GMP_Percentage": "-%"
         },
         {
-            "Name": "Rays of Belief",
-            "GMP_Percentage": "8.37%"
-        },
-        {
-            "Name": "Deepa Jewellers",
-            "GMP_Percentage": "13.28%"
-        },
-        {
-            "Name": "Purple Style Labs",
-            "GMP_Percentage": "-1.74%"
-        },
-        {
-            "Name": "ESDS Software Solution",
-            "GMP_Percentage": "72.49%"
-        },
-        {
-            "Name": "Priority Jewels",
-            "GMP_Percentage": "14.00%"
-        },
-        {
-            "Name": "Lumino Industries",
-            "GMP_Percentage": "46.34%"
-        },
-        {
-            "Name": "Annu Projects",
-            "GMP_Percentage": "-7.07%"
+            "Name": "Pranav Constructions",
+            "GMP_Percentage": "32.26%"
         }
     ],
-    "last_updated": "2026-09-07 12:45:47"
+    "last_updated": "2026-09-09 19:51:10"
 };
