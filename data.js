@@ -10,7 +10,37 @@ const ipoData = {
             "Name": "Manika Plastech",
             "Starting": "11 Sep 2026",
             "Ending": "16 Sep 2026",
-            "GMP_Percentage": "34.88%"
+            "GMP_Percentage": "25.58%"
+        },
+        {
+            "Name": "Jindal Supreme",
+            "Starting": "16 Sep 2026",
+            "Ending": "18 Sep 2026",
+            "GMP_Percentage": "26.88%"
+        },
+        {
+            "Name": "SS Retail",
+            "Starting": "16 Sep 2026",
+            "Ending": "18 Sep 2026",
+            "GMP_Percentage": "23.35%"
+        },
+        {
+            "Name": "Hero Motors",
+            "Starting": "16 Sep 2026",
+            "Ending": "18 Sep 2026",
+            "GMP_Percentage": "28.57%"
+        },
+        {
+            "Name": "Sonaselection Limited",
+            "Starting": "17 Sep 2026",
+            "Ending": "21 Sep 2026",
+            "GMP_Percentage": "0.00%"
+        },
+        {
+            "Name": "NSE",
+            "Starting": "17 Sep 2026",
+            "Ending": "21 Sep 2026",
+            "GMP_Percentage": "11.60%"
         }
     ],
     "other_mainboard_ipos": [
@@ -19,40 +49,20 @@ const ipoData = {
             "GMP_Percentage": "-%"
         },
         {
-            "Name": "Sonaselection India",
-            "GMP_Percentage": "0.00%"
-        },
-        {
-            "Name": "NSE",
-            "GMP_Percentage": "11.65%"
-        },
-        {
-            "Name": "SS Retail",
-            "GMP_Percentage": "25.00%"
-        },
-        {
-            "Name": "Hero Motors",
-            "GMP_Percentage": "28.57%"
-        },
-        {
-            "Name": "Jindal Supreme",
-            "GMP_Percentage": "26.88%"
-        },
-        {
             "Name": "Manipal Payment and Identity Solutions",
-            "GMP_Percentage": "0.29%"
+            "GMP_Percentage": "-0.59%"
         },
         {
             "Name": "Steamhouse",
-            "GMP_Percentage": "25.93%"
+            "GMP_Percentage": "26.54%"
         },
         {
             "Name": "LCC Projects",
-            "GMP_Percentage": "46.58%"
+            "GMP_Percentage": "43.84%"
         },
         {
             "Name": "Karamtara Engineering",
-            "GMP_Percentage": "27.17%"
+            "GMP_Percentage": "28.74%"
         },
         {
             "Name": "Rentomojo",
@@ -60,15 +70,15 @@ const ipoData = {
         },
         {
             "Name": "Asset Reconstruction",
-            "GMP_Percentage": "10.43%"
+            "GMP_Percentage": "10.07%"
         },
         {
             "Name": "Kanohar Electricals",
-            "GMP_Percentage": "37.97%"
+            "GMP_Percentage": "38.45%"
         },
         {
             "Name": "Glass Wall Systems",
-            "GMP_Percentage": "28.02%"
+            "GMP_Percentage": "28.57%"
         },
         {
             "Name": "Prasol Chemicals",
@@ -79,5 +89,5 @@ const ipoData = {
             "GMP_Percentage": "36.29%"
         }
     ],
-    "last_updated": "2026-09-12 21:24:18"
+    "last_updated": "2026-09-13 13:47:21"
 };
