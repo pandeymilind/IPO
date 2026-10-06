@@ -15,11 +15,11 @@ const ipoData = {
         },
         {
             "Name": "SRIT India",
-            "GMP_Percentage": "44.62%"
+            "GMP_Percentage": "45.38%"
         },
         {
             "Name": "Shah Investor's Home",
-            "GMP_Percentage": "9.88%"
+            "GMP_Percentage": "10.18%"
         },
         {
             "Name": "Acevector",
@@ -66,5 +66,5 @@ const ipoData = {
             "GMP_Percentage": "0.68%"
         }
     ],
-    "last_updated": "2026-10-05 18:48:35"
+    "last_updated": "2026-10-06 13:45:55"
 };
