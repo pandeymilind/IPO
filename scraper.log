@@ -1,0 +1,181 @@
+28/09/2026 23:53:48 - INFO - --- Scraper Started ---
+28/09/2026 23:53:48 - INFO - Fetching Open IPOs from Groww...
+28/09/2026 23:54:01 - ERROR - A critical error occurred during execution.
+Traceback (most recent call last):
+  File "C:\Users\milin\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 67, in _binary_paths
+    output = SeleniumManager().binary_paths(self._to_args())
+  File "C:\Users\milin\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 55, in binary_paths
+    return self._run(args)
+           ~~~~~~~~~^^^^^^
+  File "C:\Users\milin\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 159, in _run
+    raise WebDriverException(
+        f"Unsuccessful command executed: {command}; code: {completed_proc.returncode}\n{result}\n{stderr}"
+    )
+selenium.common.exceptions.WebDriverException: Message: Unsuccessful command executed: C:\Users\milin\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --language-binding python --output json; code: 65
+{'code': 65, 'message': 'error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)', 'driver_path': '', 'browser_path': ''}
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milin\OneDrive\Desktop\ipo\main.py", line 197, in <module>
+    groww_active_ipos = get_mainboard_ipos_groww()
+  File "C:\Users\milin\OneDrive\Desktop\ipo\main.py", line 61, in get_mainboard_ipos_groww
+    driver = get_headless_driver()
+  File "C:\Users\milin\OneDrive\Desktop\ipo\main.py", line 29, in get_headless_driver
+    return webdriver.Chrome(options=chrome_options)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\milin\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\milin\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\milin\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\milin\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+28/09/2026 23:54:01 - INFO - --- Scraper Finished ---
+
+28/09/2026 23:55:29 - INFO - --- Scraper Started ---
+28/09/2026 23:55:29 - INFO - Fetching Open IPOs from Groww...
+28/09/2026 23:55:47 - INFO - Found 6 open Mainboard IPO(s) on Groww.
+28/09/2026 23:55:47 - INFO - Fetching GMP data from InvestorGain...
+28/09/2026 23:55:58 - INFO - Browsers closed successfully.
+28/09/2026 23:55:58 - INFO - Data successfully saved to data.js
+28/09/2026 23:55:58 - INFO - Attempting to upload to GitHub...
+28/09/2026 23:56:40 - INFO - \u2705 Successfully pushed to GitHub.
+28/09/2026 23:56:40 - INFO - --- Scraper Finished ---
+
+28/09/2026 23:59:17 - INFO - --- Scraper Started ---
+28/09/2026 23:59:17 - INFO - Fetching Open IPOs from Groww...
+28/09/2026 23:59:31 - INFO - Found 6 open Mainboard IPO(s) on Groww.
+28/09/2026 23:59:31 - INFO - Fetching GMP data from InvestorGain...
+28/09/2026 23:59:43 - INFO - Browsers closed successfully.
+28/09/2026 23:59:43 - INFO - Data successfully saved to data.js
+28/09/2026 23:59:43 - INFO - Attempting to upload to GitHub...
+28/09/2026 23:59:47 - INFO - \u2705 Successfully pushed to GitHub.
+28/09/2026 23:59:47 - INFO - --- Scraper Finished ---
+
+30/09/2026 20:22:26 - INFO - --- Scraper Started ---
+30/09/2026 20:22:26 - INFO - Fetching Open IPOs from Groww...
+30/09/2026 20:22:50 - INFO - Found 2 open Mainboard IPO(s) on Groww.
+30/09/2026 20:22:50 - INFO - Fetching GMP data from InvestorGain...
+30/09/2026 20:23:00 - INFO - Browsers closed successfully.
+30/09/2026 20:23:00 - INFO - Data successfully saved to data.js
+30/09/2026 20:23:00 - INFO - Attempting to upload to GitHub...
+30/09/2026 20:23:05 - INFO - \u2705 Successfully pushed to GitHub.
+30/09/2026 20:23:05 - INFO - --- Scraper Finished ---
+
+05/10/2026 18:48:17 - INFO - --- Scraper Started ---
+05/10/2026 18:48:17 - INFO - Fetching Open IPOs from Groww...
+05/10/2026 18:48:25 - INFO - Found 0 open Mainboard IPO(s) on Groww.
+05/10/2026 18:48:25 - INFO - Fetching GMP data from InvestorGain...
+05/10/2026 18:48:35 - INFO - Browsers closed successfully.
+05/10/2026 18:48:35 - INFO - Data successfully saved to data.js
+05/10/2026 18:48:35 - INFO - Attempting to upload to GitHub...
+05/10/2026 18:48:39 - INFO - \u2705 Successfully pushed to GitHub.
+05/10/2026 18:48:39 - INFO - --- Scraper Finished ---
+
+06/10/2026 13:45:08 - INFO - --- Scraper Started ---
+06/10/2026 13:45:08 - INFO - Fetching Open IPOs from Groww...
+06/10/2026 13:45:40 - INFO - Found 0 open Mainboard IPO(s) on Groww.
+06/10/2026 13:45:40 - INFO - Fetching GMP data from InvestorGain...
+06/10/2026 13:45:55 - INFO - Browsers closed successfully.
+06/10/2026 13:45:55 - INFO - Data successfully saved to data.js
+06/10/2026 13:45:55 - INFO - Attempting to upload to GitHub...
+06/10/2026 13:46:05 - INFO - \u2705 Successfully pushed to GitHub.
+06/10/2026 13:46:05 - INFO - --- Scraper Finished ---
+
+11/10/2026 13:13:51 - INFO - --- Scraper Started ---
+11/10/2026 13:13:51 - INFO - Fetching Open IPOs from Groww...
+11/10/2026 13:14:16 - INFO - Found 1 open Mainboard IPO(s) on Groww.
+11/10/2026 13:14:16 - INFO - Fetching GMP data from InvestorGain...
+11/10/2026 13:14:28 - INFO - Browsers closed successfully.
+11/10/2026 13:14:28 - INFO - Data successfully saved to data.js
+11/10/2026 13:14:28 - INFO - Attempting to upload to GitHub...
+11/10/2026 13:14:33 - INFO - \u2705 Successfully pushed to GitHub.
+11/10/2026 13:14:33 - INFO - --- Scraper Finished ---
+
+13/10/2026 16:39:22 - INFO - --- Scraper Started ---
+13/10/2026 16:39:22 - INFO - Fetching Open IPOs from Groww...
+13/10/2026 16:39:34 - INFO - Found 5 open Mainboard IPO(s) on Groww.
+13/10/2026 16:39:34 - INFO - Fetching GMP data from InvestorGain...
+13/10/2026 16:39:43 - INFO - Browsers closed successfully.
+13/10/2026 16:39:43 - INFO - Data successfully saved to data.js
+13/10/2026 16:39:43 - INFO - Attempting to upload to GitHub...
+13/10/2026 16:39:46 - INFO - \u2705 Successfully pushed to GitHub.
+13/10/2026 16:39:46 - INFO - --- Scraper Finished ---
+
+17/10/2026 13:51:08 - INFO - --- Scraper Started ---
+17/10/2026 13:51:08 - INFO - Fetching Open IPOs from Groww...
+17/10/2026 13:51:28 - INFO - Found 5 open Mainboard IPO(s) on Groww.
+17/10/2026 13:51:28 - INFO - Fetching GMP data from InvestorGain...
+17/10/2026 13:51:46 - INFO - Browsers closed successfully.
+17/10/2026 13:51:46 - INFO - Data successfully saved to data.js
+17/10/2026 13:51:46 - INFO - Attempting to upload to GitHub...
+17/10/2026 13:51:53 - INFO - \u2705 Successfully pushed to GitHub.
+17/10/2026 13:51:53 - INFO - --- Scraper Finished ---
+
+17/10/2026 19:32:28 - INFO - --- Scraper Started ---
+17/10/2026 19:32:28 - INFO - Fetching Open IPOs from Groww...
+17/10/2026 19:32:37 - INFO - Found 5 open Mainboard IPO(s) on Groww.
+17/10/2026 19:32:37 - INFO - Fetching GMP data from InvestorGain...
+17/10/2026 19:32:46 - INFO - Browsers closed successfully.
+17/10/2026 19:32:46 - INFO - Data successfully saved to data.js
+17/10/2026 19:32:46 - INFO - Attempting to upload to GitHub...
+17/10/2026 19:32:48 - ERROR - GitHub upload failed: To https://github.com/pandeymilind/IPO.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/pandeymilind/IPO.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+17/10/2026 19:32:48 - INFO - --- Scraper Finished ---
+
+17/10/2026 19:33:04 - INFO - --- Scraper Started ---
+17/10/2026 19:33:04 - INFO - Fetching Open IPOs from Groww...
+17/10/2026 19:33:10 - INFO - Found 5 open Mainboard IPO(s) on Groww.
+17/10/2026 19:33:10 - INFO - Fetching GMP data from InvestorGain...
+17/10/2026 19:33:20 - INFO - Browsers closed successfully.
+17/10/2026 19:33:20 - INFO - Data successfully saved to data.js
+17/10/2026 19:33:20 - INFO - Attempting to upload to GitHub...
+17/10/2026 19:33:21 - ERROR - GitHub upload failed: To https://github.com/pandeymilind/IPO.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/pandeymilind/IPO.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+17/10/2026 19:33:21 - INFO - --- Scraper Finished ---
+
+17/10/2026 19:34:29 - INFO - --- Scraper Started ---
+17/10/2026 19:34:29 - INFO - Fetching Open IPOs from Groww...
+17/10/2026 19:34:36 - INFO - Found 5 open Mainboard IPO(s) on Groww.
+17/10/2026 19:34:36 - INFO - Fetching GMP data from InvestorGain...
+17/10/2026 19:34:46 - INFO - Browsers closed successfully.
+17/10/2026 19:34:46 - INFO - Data successfully saved to data.js
+17/10/2026 19:34:46 - INFO - Attempting to upload to GitHub...
+17/10/2026 19:34:48 - ERROR - GitHub upload failed: To https://github.com/pandeymilind/IPO.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/pandeymilind/IPO.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+17/10/2026 19:34:48 - INFO - --- Scraper Finished ---
+

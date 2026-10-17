@@ -8,42 +8,59 @@
 </head>
 <body>
     <div class="container">
-        <h1>IPO Tracker Dashboard</h1>
+        <!-- Main Header -->
+        <header class="dashboard-header">
+            <div class="title-badge">LIVE MARKET TRACKER</div>
+            <h1>IPO Tracker Dashboard</h1>
+            <!-- Preserves your dynamic JS classes (.updated-today, .updated-yesterday, .updated-older) -->
+            <p id="last-updated"></p>
+        </header>
         
-        <!-- Updated: Removed the static grey color so JS can control it -->
-        <p id="last-updated" style="text-align: center; font-size: 0.9em; margin-top: -15px; margin-bottom: 25px;"></p>
-        
-        <h2>Groww Listed IPO(Mainboard)</h2>
-        <div class="table-container">
-            <table id="groww-table">
-                <thead>
-                    <tr>
-                        <th>Company Name</th>
-                        <th>Starting Date</th>
-                        <th>Ending Date</th>
-                        <th>GMP (%)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Data will be inserted here by JS -->
-                </tbody>
-            </table>
-        </div>
+        <!-- Primary Section: Groww Listed IPOs -->
+        <section class="ipo-section">
+            <h2>Groww Listed IPO (Mainboard)</h2>
+            <div class="table-container">
+                <table id="groww-table">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Starting Date</th>
+                            <th>Ending Date</th>
+                            <th>GMP (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be inserted here by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-        <h2>Other Mainboard IPOs</h2>
-        <div class="table-container">
-            <table id="other-table">
-                <thead>
-                    <tr>
-                        <th>Company Name</th>
-                        <th>GMP (%)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Data will be inserted here by JS -->
-                </tbody>
-            </table>
-        </div>
+        <!-- Secondary Collapsible Section: Other Mainboard IPOs -->
+        <details class="secondary-section">
+            <summary class="secondary-summary">
+                <div class="summary-left">
+                    <span class="secondary-dot"></span>
+                    <span class="summary-title">Other Mainboard IPOs</span>
+                    <span class="summary-hint">Click to expand</span>
+                </div>
+                <span class="chevron-icon">▼</span>
+            </summary>
+            
+            <div class="table-container secondary-table-container">
+                <table id="other-table">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>GMP (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be inserted here by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </details>
     </div>
 
     <!-- Ensure your file name matches here! -->

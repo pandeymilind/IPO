@@ -1,94 +1,212 @@
-/* Import a clean, modern font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Import Inter for clean UI & JetBrains Mono for crisp financial numbers */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+:root {
+    /* Sleek Dark Fintech Palette */
+    --bg-gradient: radial-gradient(circle at top, #111827 0%, #090d16 100%);
+    --container-bg: #111827;      /* Deep slate main board */
+    --card-bg: #1e293b;           /* Elevated dark card / table surface */
+    --table-header-bg: #0f172a;   /* Darker header bar */
+    --row-hover: #263349;         /* Subtle row highlight on hover */
+    --text-main: #f8fafc;         /* Crisp off-white primary text */
+    --text-secondary: #cbd5e1;    /* Muted silver for dates/secondary text */
+    --text-muted: #94a3b8;        /* Slate grey for column headers */
+    --border-light: #334155;      /* Visible structural border */
+    --border-subtle: #1e293b;     /* Subtle row divider */
+    --accent-primary: #3b82f6;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Inter', sans-serif;
-    /* Soft gradient background for a modern feel */
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
-    color: #2d3748;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    color: var(--text-main);
     margin: 0;
     padding: 40px 20px;
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
-    max-width: 1050px;
+    max-width: 1080px;
     margin: 0 auto;
-    background: #ffffff;
-    padding: 30px 40px;
-    border-radius: 16px;
-    /* Deeper, softer shadow for a floating effect */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    background: rgba(17, 24, 39, 0.92);
+    backdrop-filter: blur(12px);
+    padding: 40px 44px;
+    border-radius: 24px;
+    border: 1px solid #1f2937;
+    box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.6),
+        0 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+/* ========================================= */
+/* HEADER & DYNAMIC LAST-UPDATED PILL        */
+/* ========================================= */
+.dashboard-header {
+    text-align: center;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+}
+
+.title-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #60a5fa;
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 12px;
 }
 
 h1 {
-    text-align: center;
-    color: #1a202c;
-    border-bottom: 2px solid #edf2f7;
-    padding-bottom: 15px;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-top: 0;
+    color: var(--text-main);
+    font-size: 2.35rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 14px 0;
+}
+
+#last-updated {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin: 0;
+    background: #1e293b;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-light);
+    transition: all 0.2s ease;
+}
+
+#last-updated::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: currentColor;
+    box-shadow: 0 0 8px currentColor;
+}
+
+/* Dynamic Last Updated Colors (Dark Mode Glowing Pills) */
+.updated-today {
+    color: #34d399 !important;
+    background-color: rgba(16, 185, 129, 0.12) !important;
+    border-color: rgba(16, 185, 129, 0.35) !important;
+    font-weight: 600;
+}
+
+.updated-yesterday {
+    color: #60a5fa !important;
+    background-color: rgba(59, 130, 246, 0.12) !important;
+    border-color: rgba(59, 130, 246, 0.35) !important;
+    font-weight: 600;
+}
+
+.updated-older {
+    color: #f87171 !important;
+    background-color: rgba(239, 68, 68, 0.12) !important;
+    border-color: rgba(239, 68, 68, 0.35) !important;
+    font-weight: 600;
+}
+
+/* ========================================= */
+/* PRIMARY SECTION & TABLE                   */
+/* ========================================= */
+.ipo-section {
+    margin-top: 24px;
 }
 
 h2 {
-    color: #4a5568;
-    margin-top: 40px;
-    font-size: 1.4rem;
-    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 16px 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
-/* Adds a nice vertical blue accent line next to your headers */
 h2::before {
     content: "";
     display: inline-block;
     width: 6px;
-    height: 24px;
-    background-color: #3182ce;
-    border-radius: 4px;
+    height: 22px;
+    background: linear-gradient(180deg, #60a5fa 0%, #2563eb 100%);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
 .table-container {
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    overflow-x: hidden;
+    border-radius: 16px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    background: var(--card-bg);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #ffffff;
+    background-color: var(--card-bg);
 }
 
 th, td {
-    padding: 16px 20px;
+    padding: 16px 24px;
     text-align: left;
-    border-bottom: 1px solid #edf2f7;
+    border-bottom: 1px solid #283548;
     font-size: 0.95rem;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 th {
-    background-color: #f7fafc;
-    color: #4a5568;
-    font-weight: 600;
+    background-color: var(--table-header-bg);
+    color: var(--text-muted);
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 0.05em;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid #1f2937;
 }
 
 tr:last-child td {
     border-bottom: none;
 }
 
-/* Subtle row hover effect */
-tr:hover td {
-    background-color: #ebf8ff;
-    transition: background-color 0.2s ease;
+tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+tbody tr:hover td {
+    background-color: var(--row-hover);
+}
+
+/* Make the Company Name (first column) stand out */
+td:first-child {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+}
+
+/* Styling for Date columns on Groww table */
+#groww-table td:nth-child(2),
+#groww-table td:nth-child(3) {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
 }
 
 /* Center align the last column (GMP) in all tables */
@@ -96,41 +214,192 @@ th:last-child, td:last-child {
     text-align: center;
 }
 
-/* Updated Dynamic GMP Colors with uniform widths */
-.gmp-positive {
-    color: #047857;
-    background-color: #d1fae5;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: 600;
+/* ========================================= */
+/* DYNAMIC GMP BADGES (DARK MODE NEON TINTS) */
+/* ========================================= */
+.gmp-positive,
+.gmp-negative,
+.gmp-neutral {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    padding: 6px 14px;
+    border-radius: 999px;
     display: inline-block;
-    min-width: 65px;
+    min-width: 76px;
     text-align: center;
     vertical-align: middle;
+    letter-spacing: -0.02em;
+}
+
+.gmp-positive {
+    color: #34d399;
+    background-color: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.12);
 }
 
 .gmp-negative {
-    color: #b91c1c;
-    background-color: #fee2e2;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: 600;
-    display: inline-block;
-    min-width: 65px;
-    text-align: center;
-    vertical-align: middle;
+    color: #f87171;
+    background-color: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.12);
 }
 
 .gmp-neutral {
-    color: #718096;
-    background-color: #edf2f7;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: 500;
-    display: inline-block;
-    min-width: 65px;
-    text-align: center;
-    vertical-align: middle;
+    color: #94a3b8;
+    background-color: rgba(148, 163, 184, 0.12);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    font-weight: 600;
+}
+
+/* ========================================= */
+/* SECONDARY / COMPACT "OTHER IPOs" SECTION  */
+/* ========================================= */
+.secondary-section {
+    margin-top: 32px;
+    background: #0f172a;
+    border: 1px dashed #334155;
+    border-radius: 16px;
+    padding: 6px 18px;
+    transition: all 0.25s ease;
+}
+
+.secondary-section[open] {
+    background: #0f172a;
+    border-style: solid;
+    border-color: #1e293b;
+    padding-bottom: 18px;
+}
+
+.secondary-summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.secondary-summary::-webkit-details-marker {
+    display: none;
+}
+
+.summary-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secondary-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #64748b;
+}
+
+.summary-title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.summary-hint {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.secondary-section[open] .summary-hint {
+    display: none;
+}
+
+.chevron-icon {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: transform 0.25s ease;
+}
+
+.secondary-section[open] .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.secondary-table-container {
+    margin-top: 8px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+    width: 100%;
+}
+
+/* Full width block table + 3-column responsive grid on tbody */
+#other-table {
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+
+#other-table tbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    width: 100%;
+    background: transparent;
+}
+
+#other-table thead {
+    display: none;
+}
+
+#other-table tbody tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: var(--card-bg);
+    border: 1px solid #283548;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#other-table tbody tr:hover td {
+    background: transparent;
+}
+
+#other-table tbody tr:hover {
+    background: var(--row-hover);
+    border-color: #475569;
+}
+
+#other-table td {
+    border: none;
+    padding: 0;
+    font-size: 0.88rem;
+    background: transparent !important;
+}
+
+#other-table td:first-child {
+    font-weight: 600;
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+#other-table .gmp-positive,
+#other-table .gmp-negative,
+#other-table .gmp-neutral {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    min-width: 62px;
 }
 
 /* ========================================= */
@@ -138,109 +407,108 @@ th:last-child, td:last-child {
 /* ========================================= */
 @media screen and (max-width: 768px) {
     body {
-        padding: 20px 10px;
+        padding: 16px 12px;
     }
 
     .container {
-        padding: 20px 15px;
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+
+    .dashboard-header {
+        padding-bottom: 20px;
+        margin-bottom: 24px;
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.65rem;
     }
 
     h2 {
-        font-size: 1.2rem;
-    }
-    
-    .table-container {
-        border: none;
-        box-shadow: none;
-        background: transparent;
+        font-size: 1.15rem;
     }
 
-    /* Force table to behave like standard block elements */
-    table, thead, tbody, th, td, tr {
+    /* Primary Groww Table Mobile Card Rules */
+    #groww-table,
+    #groww-table thead,
+    #groww-table tbody,
+    #groww-table th,
+    #groww-table td,
+    #groww-table tr {
         display: block;
     }
 
-    /* Hide standard table headers for mobile */
-    thead tr {
+    .ipo-section .table-container {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        overflow: visible;
+    }
+
+    #groww-table {
+        background: transparent;
+    }
+
+    #groww-table thead tr {
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
 
-    /* Style rows as individual cards */
-    tr {
-        background-color: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        margin-bottom: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
-        overflow: hidden; 
+    #groww-table tbody tr {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-light);
+        border-radius: 14px;
+        margin-bottom: 14px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
     }
 
-    /* Remove row hover effect on mobile */
-    tr:hover td {
+    #groww-table tbody tr:hover td {
         background-color: transparent;
     }
 
-    /* Transform cells into flex containers */
-    td {
+    #groww-table td {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #edf2f7;
-        padding: 12px 15px;
+        border-bottom: 1px solid #283548;
+        padding: 12px 16px;
         text-align: right;
         font-size: 0.9rem;
     }
 
-    /* Reset right alignment for the GMP badge */
-    th:last-child, td:last-child {
+    #groww-table td:first-child {
+        background-color: var(--table-header-bg);
+        border-bottom: 1px solid var(--border-light);
+        font-size: 0.98rem;
+        padding: 14px 16px;
+    }
+
+    #groww-table th:last-child,
+    #groww-table td:last-child {
         text-align: right;
     }
 
-    /* Inject column labels on the left side of the row */
-    td::before {
+    #groww-table td::before {
+        font-family: 'Inter', sans-serif;
         font-weight: 600;
-        color: #4a5568;
+        color: var(--text-muted);
         text-transform: uppercase;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         letter-spacing: 0.05em;
         text-align: left;
         margin-right: 15px;
     }
 
-    /* Labels for the Groww Table */
+    /* Labels for the Groww Table on Mobile */
     #groww-table td:nth-child(1)::before { content: "Company Name"; }
     #groww-table td:nth-child(2)::before { content: "Starting Date"; }
     #groww-table td:nth-child(3)::before { content: "Ending Date"; }
     #groww-table td:nth-child(4)::before { content: "GMP (%)"; }
 
-    /* Labels for the Other Mainboard IPO Table */
-    #other-table td:nth-child(1)::before { content: "Company Name"; }
-    #other-table td:nth-child(2)::before { content: "GMP (%)"; }
-}
-/* Make the Company Name (first column) stand out */
-td:first-child {
-    font-weight: 700;       /* Makes the text bold */
-    color: #444d60;         /* Uses a darker, bolder color */
-    font-size: 1.05rem;     /* Makes the text slightly larger */
-}
-/* Dynamic Last Updated Colors */
-.updated-today {
-    color: #27ae60; /* Green */
-    font-weight: bold;
-}
-
-.updated-yesterday {
-    color: #2980b9; /* Blue */
-    font-weight: bold;
-}
-
-.updated-older {
-    color: #c0392b; /* Red */
-    font-weight: bold;
+    /* Secondary Other IPOs Table on Mobile (1-column full-width pills) */
+    #other-table tbody {
+        grid-template-columns: 1fr;
+    }
 }
