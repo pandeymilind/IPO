@@ -1,52 +1,56 @@
 const ipoData = {
     "groww_open_ipos": [
         {
-            "Name": "HD Fire Protect",
-            "Starting": "13 Oct 2026",
-            "Ending": "15 Oct 2026",
-            "GMP_Percentage": "32.84%"
-        },
-        {
-            "Name": "Fusion CX",
-            "Starting": "14 Oct 2026",
-            "Ending": "16 Oct 2026",
-            "GMP_Percentage": "10.03%"
-        },
-        {
             "Name": "Zetwerk",
             "Starting": "15 Oct 2026",
             "Ending": "19 Oct 2026",
-            "GMP_Percentage": "13.58%"
+            "GMP_Percentage": "4.97%"
         },
         {
             "Name": "Sahajanand Medical Technologies",
             "Starting": "15 Oct 2026",
             "Ending": "19 Oct 2026",
-            "GMP_Percentage": "10.76%"
+            "GMP_Percentage": "8.14%"
         },
         {
             "Name": "Tonbo Imaging",
             "Starting": "15 Oct 2026",
             "Ending": "19 Oct 2026",
-            "GMP_Percentage": "66.86%"
+            "GMP_Percentage": "75.00%"
+        },
+        {
+            "Name": "Bonfiglioli Transmissions",
+            "Starting": "15 Oct 2026",
+            "Ending": "19 Oct 2026",
+            "GMP_Percentage": "22.35%"
+        },
+        {
+            "Name": "Jio Platforms",
+            "Starting": "21 Oct 2026",
+            "Ending": "23 Oct 2026",
+            "GMP_Percentage": "19.75%"
         }
     ],
     "other_mainboard_ipos": [
         {
-            "Name": "Jio Platforms",
-            "GMP_Percentage": "-%"
+            "Name": "Paras Healthcare",
+            "GMP_Percentage": "13.71%"
         },
         {
-            "Name": "Bonfiglioli Transmissions",
-            "GMP_Percentage": "27.47%"
+            "Name": "Fusion CX",
+            "GMP_Percentage": "3.63%"
         },
         {
-            "Name": "Vishal Nirmiti",
-            "GMP_Percentage": "0.91%"
+            "Name": "HD Fire Protect",
+            "GMP_Percentage": "26.57%"
         },
         {
             "Name": "Nityas Gems & Jewellery",
             "GMP_Percentage": "1.33%"
+        },
+        {
+            "Name": "Vishal Nirmiti",
+            "GMP_Percentage": "0.91%"
         },
         {
             "Name": "SRIT India",
@@ -55,10 +59,6 @@ const ipoData = {
         {
             "Name": "Shah Investor's Home",
             "GMP_Percentage": "10.18%"
-        },
-        {
-            "Name": "Orient Cables",
-            "GMP_Percentage": "40.44%"
         },
         {
             "Name": "Acevector",
@@ -73,6 +73,10 @@ const ipoData = {
             "GMP_Percentage": "6.83%"
         },
         {
+            "Name": "Orient Cables",
+            "GMP_Percentage": "40.44%"
+        },
+        {
             "Name": "A-One Steels",
             "GMP_Percentage": "11.36%"
         },
@@ -81,13 +85,17 @@ const ipoData = {
             "GMP_Percentage": "42.65%"
         },
         {
-            "Name": "Elevate Campuses",
-            "GMP_Percentage": "1.80%"
+            "Name": "Swastika Infra",
+            "GMP_Percentage": "3.78%"
+        },
+        {
+            "Name": "ArMee Infotech",
+            "GMP_Percentage": "1.60%"
         },
         {
             "Name": "Adroit Industries",
             "GMP_Percentage": "41.04%"
         }
     ],
-    "last_updated": "2026-10-13 16:39:43"
+    "last_updated": "2026-10-17 13:51:46"
 };
