@@ -4,25 +4,25 @@ const ipoData = {
             "Name": "Zetwerk",
             "Starting": "15 Oct 2026",
             "Ending": "19 Oct 2026",
-            "GMP_Percentage": "4.97%"
+            "GMP_Percentage": "3.97%"
         },
         {
             "Name": "Sahajanand Medical Technologies",
             "Starting": "15 Oct 2026",
             "Ending": "19 Oct 2026",
-            "GMP_Percentage": "8.14%"
+            "GMP_Percentage": "4.94%"
         },
         {
             "Name": "Tonbo Imaging",
             "Starting": "15 Oct 2026",
             "Ending": "19 Oct 2026",
-            "GMP_Percentage": "75.00%"
+            "GMP_Percentage": "72.14%"
         },
         {
             "Name": "Bonfiglioli Transmissions",
             "Starting": "15 Oct 2026",
             "Ending": "19 Oct 2026",
-            "GMP_Percentage": "22.35%"
+            "GMP_Percentage": "22.53%"
         },
         {
             "Name": "Jio Platforms",
@@ -34,15 +34,15 @@ const ipoData = {
     "other_mainboard_ipos": [
         {
             "Name": "Paras Healthcare",
-            "GMP_Percentage": "13.71%"
+            "GMP_Percentage": "13.85%"
         },
         {
             "Name": "Fusion CX",
-            "GMP_Percentage": "3.63%"
+            "GMP_Percentage": "4.50%"
         },
         {
             "Name": "HD Fire Protect",
-            "GMP_Percentage": "26.57%"
+            "GMP_Percentage": "24.35%"
         },
         {
             "Name": "Nityas Gems & Jewellery",
@@ -97,5 +97,5 @@ const ipoData = {
             "GMP_Percentage": "41.04%"
         }
     ],
-    "last_updated": "2026-10-17 13:51:46"
+    "last_updated": "2026-10-17 19:32:46"
 };
