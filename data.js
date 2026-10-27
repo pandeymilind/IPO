@@ -22,17 +22,13 @@ const ipoData = {
             "Name": "M. K. Sons Fine Jewels",
             "Starting": "28 Oct 2026",
             "Ending": "30 Oct 2026",
-            "GMP_Percentage": "Not found"
+            "GMP_Percentage": "6.17%"
         }
     ],
     "other_mainboard_ipos": [
         {
             "Name": "Bombay Coated and Special Steels",
             "GMP_Percentage": "10.98%"
-        },
-        {
-            "Name": "M.K.Sons Fine Jewels",
-            "GMP_Percentage": "6.17%"
         },
         {
             "Name": "Paras Healthcare",
@@ -67,5 +63,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-10-28 01:28:06"
+    "last_updated": "2026-10-28 01:47:36"
 };
