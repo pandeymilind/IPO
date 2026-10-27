@@ -28,11 +28,30 @@ def get_headless_driver():
     chrome_options.add_argument('--log-level=3')
     return webdriver.Chrome(options=chrome_options)
 
+
+def normalize_company_name(name):
+    """Normalize company names for reliable cross-source matching."""
+    name = name.lower().strip()
+
+    # Remove common suffixes and IPO labels
+    name = re.sub(r'\b(ipo|limited|ltd)\b', '', name)
+
+    # Remove punctuation and all whitespace
+    name = re.sub(r'[^a-z0-9]', '', name)
+
+    return name
+
+
 def is_company_match(name1, name2):
-    """Checks if two company names match after cleaning common suffixes."""
-    clean1 = name1.lower().replace('ipo', '').replace('ltd', '').replace('limited', '').strip()
-    clean2 = name2.lower().replace('ipo', '').replace('ltd', '').replace('limited', '').strip()
-    return clean1 in clean2 or clean2 in clean1
+    """Compare normalized company names."""
+    clean1 = normalize_company_name(name1)
+    clean2 = normalize_company_name(name2)
+
+    return bool(clean1 and clean2 and (
+        clean1 == clean2
+        or clean1 in clean2
+        or clean2 in clean1
+    ))
 
 def push_to_github():
     """Automatically commits and pushes data.js to GitHub."""
