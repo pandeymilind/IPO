@@ -4,7 +4,7 @@ const ipoData = {
             "Name": "EAAA India Alternatives",
             "Starting": "26 Oct 2026",
             "Ending": "28 Oct 2026",
-            "GMP_Percentage": "0.60%"
+            "GMP_Percentage": "0.66%"
         },
         {
             "Name": "BLS Polymers",
@@ -32,11 +32,11 @@ const ipoData = {
         },
         {
             "Name": "M.K.Sons Fine Jewels",
-            "GMP_Percentage": "5.56%"
+            "GMP_Percentage": "6.17%"
         },
         {
             "Name": "Paras Healthcare",
-            "GMP_Percentage": "2.31%"
+            "GMP_Percentage": "1.88%"
         },
         {
             "Name": "Jio Platforms",
@@ -67,5 +67,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-10-27 21:35:34"
+    "last_updated": "2026-10-28 01:28:06"
 };
