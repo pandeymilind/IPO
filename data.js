@@ -22,17 +22,13 @@ const ipoData = {
             "Name": "Bombay Coated & Special Steels",
             "Starting": "29 Oct 2026",
             "Ending": "02 Nov 2026",
-            "GMP_Percentage": "Not found"
+            "GMP_Percentage": "10.98%"
         }
     ],
     "other_mainboard_ipos": [
         {
-            "Name": "Bombay Coated and Special Steels",
-            "GMP_Percentage": "10.98%"
-        },
-        {
             "Name": "EAAA India Alternatives",
-            "GMP_Percentage": "1.50%"
+            "GMP_Percentage": "1.56%"
         },
         {
             "Name": "Paras Healthcare",
@@ -67,5 +63,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-10-28 20:01:36"
+    "last_updated": "2026-10-28 21:07:54"
 };

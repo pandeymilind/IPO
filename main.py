@@ -31,13 +31,19 @@ def get_headless_driver():
 
 def normalize_company_name(name):
     """Normalize company names for reliable cross-source matching."""
+    if not name:
+        return ""
+
     name = name.lower().strip()
 
+    # Treat "&" and "and" as equivalent
+    name = re.sub(r"\band\b|&", " and ", name)
+
     # Remove common suffixes and IPO labels
-    name = re.sub(r'\b(ipo|limited|ltd)\b', '', name)
+    name = re.sub(r"\b(ipo|limited|ltd)\b", "", name)
 
     # Remove punctuation and all whitespace
-    name = re.sub(r'[^a-z0-9]', '', name)
+    name = re.sub(r"[^a-z0-9]", "", name)
 
     return name
 

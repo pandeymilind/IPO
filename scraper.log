@@ -269,3 +269,33 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 28/10/2026 01:28:12 - INFO - \u2705 Successfully pushed to GitHub.
 28/10/2026 01:28:12 - INFO - --- Scraper Finished ---
 
+28/10/2026 01:47:18 - INFO - --- Scraper Started ---
+28/10/2026 01:47:18 - INFO - Fetching Open IPOs from Groww...
+28/10/2026 01:47:26 - INFO - Found 4 open Mainboard IPO(s) on Groww.
+28/10/2026 01:47:26 - INFO - Fetching GMP data from InvestorGain...
+28/10/2026 01:47:36 - INFO - Browsers closed successfully.
+28/10/2026 01:47:36 - INFO - Data successfully saved to data.js
+28/10/2026 01:47:36 - INFO - Attempting to upload to GitHub...
+28/10/2026 01:47:39 - INFO - \u2705 Successfully pushed to GitHub.
+28/10/2026 01:47:39 - INFO - --- Scraper Finished ---
+
+28/10/2026 14:11:07 - INFO - --- Scraper Started ---
+28/10/2026 14:11:07 - INFO - Fetching Open IPOs from Groww...
+28/10/2026 14:11:20 - INFO - Found 5 open Mainboard IPO(s) on Groww.
+28/10/2026 14:11:20 - INFO - Fetching GMP data from InvestorGain...
+28/10/2026 14:11:30 - INFO - Browsers closed successfully.
+28/10/2026 14:11:30 - INFO - Data successfully saved to data.js
+28/10/2026 14:11:30 - INFO - Attempting to upload to GitHub...
+28/10/2026 14:11:34 - INFO - \u2705 Successfully pushed to GitHub.
+28/10/2026 14:11:34 - INFO - --- Scraper Finished ---
+
+28/10/2026 20:01:08 - INFO - --- Scraper Started ---
+28/10/2026 20:01:08 - INFO - Fetching Open IPOs from Groww...
+28/10/2026 20:01:26 - INFO - Found 4 open Mainboard IPO(s) on Groww.
+28/10/2026 20:01:26 - INFO - Fetching GMP data from InvestorGain...
+28/10/2026 20:01:36 - INFO - Browsers closed successfully.
+28/10/2026 20:01:36 - INFO - Data successfully saved to data.js
+28/10/2026 20:01:36 - INFO - Attempting to upload to GitHub...
+28/10/2026 20:01:40 - INFO - \u2705 Successfully pushed to GitHub.
+28/10/2026 20:01:40 - INFO - --- Scraper Finished ---
+
