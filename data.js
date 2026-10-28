@@ -4,25 +4,31 @@ const ipoData = {
             "Name": "EAAA India Alternatives",
             "Starting": "26 Oct 2026",
             "Ending": "28 Oct 2026",
-            "GMP_Percentage": "0.66%"
+            "GMP_Percentage": "0.72%"
         },
         {
             "Name": "BLS Polymers",
             "Starting": "27 Oct 2026",
             "Ending": "29 Oct 2026",
-            "GMP_Percentage": "29.33%"
+            "GMP_Percentage": "30.67%"
         },
         {
             "Name": "SFC Environmental Technologies",
             "Starting": "27 Oct 2026",
             "Ending": "29 Oct 2026",
-            "GMP_Percentage": "5.15%"
+            "GMP_Percentage": "4.55%"
         },
         {
             "Name": "M. K. Sons Fine Jewels",
             "Starting": "28 Oct 2026",
             "Ending": "30 Oct 2026",
-            "GMP_Percentage": "6.17%"
+            "GMP_Percentage": "7.10%"
+        },
+        {
+            "Name": "Bombay Coated & Special Steels",
+            "Starting": "29 Oct 2026",
+            "Ending": "02 Nov 2026",
+            "GMP_Percentage": "Not found"
         }
     ],
     "other_mainboard_ipos": [
@@ -36,15 +42,7 @@ const ipoData = {
         },
         {
             "Name": "Jio Platforms",
-            "GMP_Percentage": "22.16%"
-        },
-        {
-            "Name": "Bonfiglioli Transmissions",
-            "GMP_Percentage": "11.26%"
-        },
-        {
-            "Name": "Sahajanand Medical Technologies",
-            "GMP_Percentage": "4.94%"
+            "GMP_Percentage": "22.34%"
         },
         {
             "Name": "Zetwerk",
@@ -55,6 +53,14 @@ const ipoData = {
             "GMP_Percentage": "64.57%"
         },
         {
+            "Name": "Sahajanand Medical Technologies",
+            "GMP_Percentage": "4.94%"
+        },
+        {
+            "Name": "Bonfiglioli Transmissions",
+            "GMP_Percentage": "11.26%"
+        },
+        {
             "Name": "Fusion CX",
             "GMP_Percentage": "4.67%"
         },
@@ -63,5 +69,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-10-28 01:47:36"
+    "last_updated": "2026-10-28 14:11:30"
 };
