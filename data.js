@@ -1,30 +1,28 @@
 const ipoData = {
     "groww_open_ipos": [
         {
-            "Name": "M. K. Sons Fine Jewels",
-            "Starting": "28 Oct 2026",
-            "Ending": "30 Oct 2026",
-            "GMP_Percentage": "4.94%"
-        },
-        {
             "Name": "Bombay Coated & Special Steels",
             "Starting": "29 Oct 2026",
             "Ending": "02 Nov 2026",
-            "GMP_Percentage": "10.37%"
+            "GMP_Percentage": "8.54%"
         }
     ],
     "other_mainboard_ipos": [
+        {
+            "Name": "M.K.Sons Fine Jewels",
+            "GMP_Percentage": "3.89%"
+        },
         {
             "Name": "SFC Environmental Technologies",
             "GMP_Percentage": "6.36%"
         },
         {
             "Name": "BLS Polymers",
-            "GMP_Percentage": "48.00%"
+            "GMP_Percentage": "48.67%"
         },
         {
             "Name": "EAAA India Alternatives",
-            "GMP_Percentage": "3.48%"
+            "GMP_Percentage": "3.12%"
         },
         {
             "Name": "Paras Healthcare",
@@ -59,5 +57,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-10-30 14:15:09"
+    "last_updated": "2026-10-30 19:21:50"
 };
