@@ -14,7 +14,7 @@ const ipoData = {
         },
         {
             "Name": "SFC Environmental Technologies",
-            "GMP_Percentage": "8.03%"
+            "GMP_Percentage": "8.18%"
         },
         {
             "Name": "BLS Polymers",
@@ -22,7 +22,7 @@ const ipoData = {
         },
         {
             "Name": "EAAA India Alternatives",
-            "GMP_Percentage": "3.90%"
+            "GMP_Percentage": "4.02%"
         },
         {
             "Name": "Paras Healthcare",
@@ -57,5 +57,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-11-01 14:27:55"
+    "last_updated": "2026-11-01 18:12:28"
 };
