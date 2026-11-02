@@ -1,28 +1,25 @@
 const ipoData = {
-    "groww_open_ipos": [
-        {
-            "Name": "Bombay Coated & Special Steels",
-            "Starting": "29 Oct 2026",
-            "Ending": "02 Nov 2026",
-            "GMP_Percentage": "10.98%"
-        }
-    ],
+    "groww_open_ipos": [],
     "other_mainboard_ipos": [
         {
+            "Name": "Bombay Coated and Special Steels",
+            "GMP_Percentage": "9.15%"
+        },
+        {
             "Name": "M.K.Sons Fine Jewels",
-            "GMP_Percentage": "3.40%"
+            "GMP_Percentage": "4.01%"
         },
         {
             "Name": "SFC Environmental Technologies",
-            "GMP_Percentage": "8.18%"
+            "GMP_Percentage": "4.55%"
         },
         {
             "Name": "BLS Polymers",
-            "GMP_Percentage": "45.33%"
+            "GMP_Percentage": "44.67%"
         },
         {
             "Name": "EAAA India Alternatives",
-            "GMP_Percentage": "4.02%"
+            "GMP_Percentage": "3.24%"
         },
         {
             "Name": "Paras Healthcare",
@@ -57,5 +54,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-11-01 18:12:28"
+    "last_updated": "2026-11-02 21:02:43"
 };
