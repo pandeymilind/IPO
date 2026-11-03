@@ -3,19 +3,19 @@ const ipoData = {
     "other_mainboard_ipos": [
         {
             "Name": "Bombay Coated and Special Steels",
-            "GMP_Percentage": "9.15%"
+            "GMP_Percentage": "10.98%"
         },
         {
             "Name": "M.K.Sons Fine Jewels",
-            "GMP_Percentage": "4.01%"
+            "GMP_Percentage": "5.86%"
         },
         {
             "Name": "SFC Environmental Technologies",
-            "GMP_Percentage": "4.55%"
+            "GMP_Percentage": "4.70%"
         },
         {
             "Name": "BLS Polymers",
-            "GMP_Percentage": "44.67%"
+            "GMP_Percentage": "46.00%"
         },
         {
             "Name": "EAAA India Alternatives",
@@ -54,5 +54,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-11-02 21:02:43"
+    "last_updated": "2026-11-03 13:13:13"
 };
