@@ -3,11 +3,11 @@ const ipoData = {
     "other_mainboard_ipos": [
         {
             "Name": "Bombay Coated and Special Steels",
-            "GMP_Percentage": "10.98%"
+            "GMP_Percentage": "10.37%"
         },
         {
             "Name": "M.K.Sons Fine Jewels",
-            "GMP_Percentage": "5.86%"
+            "GMP_Percentage": "6.79%"
         },
         {
             "Name": "SFC Environmental Technologies",
@@ -54,5 +54,5 @@ const ipoData = {
             "GMP_Percentage": "25.83%"
         }
     ],
-    "last_updated": "2026-11-03 13:13:13"
+    "last_updated": "2026-11-04 15:04:44"
 };
